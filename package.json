@@ -1,0 +1,25 @@
+{
+  "name": "ethos",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "browserify --no-builtins --no-commondir --insert-global-vars=\"global\" -t reactify -d src/app.js > app/index.min.js"
+  },
+  "repository": "https://github.com/maiavictor/ethos",
+  "keywords": [],
+  "author": "Victor Maia",
+  "license": "",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  },
+  "dependencies": {
+    "electron": "^1.6.6",
+    "electron-drag": "^1.2.0",
+    "fs-promise": "^2.0.2",
+    "setimmediate": "^1.0.5",
+    "swarm-js": "^0.1.15",
+    "web3": "^0.18.4"
+  }
+}
